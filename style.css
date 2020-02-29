@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas: 
+        "scoreArea buttonsArea"
+        "canvasArea canvasArea";
+}
+
+.score {
+    grid-area: scoreArea;
+    text-align: center;
+    background-color: brown;
+}
+
+.canvas {
+    grid-area: canvasArea;
+    text-align: center;
+    background-color: aqua;
+}
+
+.buttons {
+    grid-area: buttonsArea;
+    text-align: center;
+    background-color: blue;
+}
+
+.canvas .innerContainer {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "leftArea middleArea rightArea";
+}
+
+.left {
+    grid-area: leftArea;
+    font-style: italic;
+}
+
+.right {
+    grid-area: rightArea;
+    font-style: italic;
+}
+
+.middle {
+    grid-area: middleArea;
+}
+
+#lblDetec {
+    font-weight: bold;
+    color: white;
+}

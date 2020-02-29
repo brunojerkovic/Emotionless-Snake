@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Snake</title>
+    
+    <script defer src="snake.js" charset="utf-8"></script>
+    <script defer src="face-api.min.js" charset="utf-8"></script>
+    <script defer src="video.js" charset="utf-8"></script>
+    <script defer src="voice.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class = "score">
+            <h2 id="spanScore">-1</h2>
+        </div>
+        <div class = "canvas">
+            <div class="innerContainer">
+                <div class="left">
+                    <h1 class="message">Be sure to stand in well lit room!</h1>
+                    <h2>Hearing:</h2>
+                    <h3 class="pVoice">
+                        If you want to change emotion arrows, just say "reset"<br>
+                        (sorry for lagging)
+                    </h3>
+                </div>
+                <div class="middle"><canvas id="canvas"></canvas></div>
+                <div class="right">
+                    <h1 class="message">Be sure to stand in well lit room!</h1>
+                    <h2>Hearing:</h2>
+                    <h3 class="pVoice">
+                        If you want to change emotion arrows, just say "reset"<br>
+                        (sorry for lagging)
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <label><b>UP: </b></label> <label id="lblUp"></label>
+            <label><b>DOWN: </b></label> <label id="lblDown"></label>
+            <label><b>RIGHT: </b></label> <label id="lblRight"></label>
+            <label><b>LEFT: </b></label> <label id="lblLeft"></label> <br/>
+            <label id="lblType"><b>DETECTED EMOTION: </b></label> <br> <label id="lblDetec">NOT DETECTING</label>
+            <video id="video" height="0" width="0" autoplay muted></video>
+        </div>
+    </div>
+</body>
+</html>
