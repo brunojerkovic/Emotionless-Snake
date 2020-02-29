@@ -13,5 +13,5 @@ The rules are simple:
 	Whenever you want to reset the game, just say "reset" and , since the game has implemented speech recognition, 
 	the game will reset and directions will reset linked emotions; you can see everything you speak on the sides.
 
-![cannot load image](./screenshots/Screenshot_1.png "Screenshot 1")
-![cannot load image](./screenshots/Screenshot_5.png "Screenshot 2")
+![cannot load image](./screenshots/Screenshot_1.jpg "Screenshot 1")
+![cannot load image](./screenshots/Screenshot_5.jpg "Screenshot 2")
